@@ -10,10 +10,10 @@ def HowManyTimes(s,s_generic):
     return count
 
 def combi(el, size):
-    if len(el) < size size == 1:
+    if len(el) < size or size == 1:
         return el
     result = []
-    
+
     for i, item in enumerate(el):
         for j in combi(el[i + 1:], size - 1):
             result.append(item + j)
