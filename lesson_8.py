@@ -9,12 +9,12 @@ def HowManyTimes(s,s_generic):
             count = count + 1  
     return count
 
-def combi(el, size):
-    if len(el) < size size == 1:
-        return el
- 
+def combi(element, size):
+    if len(element) < size size == 1:
+        return element
+        
     result = []
-    for i, item in enumerate(el):
-        for j in combi(el[i + 1:], size - 1):
+    for i, item in enumerate(element):
+        for j in combi(element[i + 1:], size - 1):
             result.append(item + j)
     return result
