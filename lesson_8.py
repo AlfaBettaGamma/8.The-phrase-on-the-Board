@@ -3,7 +3,7 @@ def HowManyTimes(s,s_generic):
     count = 0
     for i in s_generic:
         st.append(i)
-    a = combi(st, len(s));
+    a = combi(st, len(s))
     for el in a:
         if el == s:
             count = count + 1  
